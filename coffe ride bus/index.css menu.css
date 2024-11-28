@@ -1,0 +1,336 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(148, 112, 85, 0.8);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+header nav ul li {
+    margin: 0;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffdf91;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(/img/DALL·E\ 2024-11-24\ 02.55.45\ -\ A\ realistic\ image\ of\ a\ modern\ luxury\ bus\ designed\ as\ a\ mobile\ café\ and\ transportation\ service.\ The\ bus\ has\ large\ windows\,\ sleek\ exterior\ branding\ with.webp);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+.menu{
+    margin-top: -30px;
+    background-color: rgba(0, 0, 0, 0.475);
+    width: 600px;
+    height: 490px;
+    border-radius: 10px;
+}
+
+.men{
+    background-color: #5c3f2e7c;
+    width: 410px;
+    height: 470px;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    list-style: none;
+}
+.men h1{
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff17;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.men h1:hover{
+    transform: scale(1.1);
+}
+.men .me{
+    color: #ffffff;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: -240px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.men .me1{
+    color: #000000;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.m{
+    text-align: left;
+    margin-left: 45px;
+    background-color: #00000052;
+    list-style: none;
+    color: #be6e04;
+    box-shadow: 1px 1px 1px black;
+    width: 80px;
+    padding-left: 5px;
+}
+.m:hover{
+    transform: scale(1.1);
+    background-color: #ffffff70;
+    color: #000000;
+
+}
+
+
+.catg{
+    position: relative;
+    margin-top: -340px;
+    margin-left: 240px;
+    
+}
+.catg a{
+    color: #ffffff;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 150px;
+    text-decoration: none;
+}
+.cat{
+    margin-top: -5px;
+    color: #ffffff;
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.ca{
+    text-align: left;
+    margin-left: 45px;
+    background-color: #00000052;
+    list-style: none;
+    color: #be6e04;
+        box-shadow: 1px 1px 1px black;
+    width: 80px;
+    padding-left: 5px;
+}
+
+.ca:hover{
+    transform: scale(1.1);
+    background-color: #ffffff70;
+    color: #000000;
+}
+
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Booking Section */
+.booking {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.booking form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.booking input, .booking select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking .btn {
+    padding: 12px 25px;
+    background-color: #6f4f37;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.booking .btn:hover {
+    background-color: #573a28;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6f4f37;
+    color: white;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .services h2 {
+        font-size: 24px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .booking form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .services h2 {
+        font-size: 20px;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+}
+
